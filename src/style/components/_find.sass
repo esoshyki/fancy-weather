@@ -1,0 +1,35 @@
+.__find 
+    +flex(row, space-between)
+    +laptop 
+        width: 100%
+        max-width: 600px
+
+    input 
+        min-width: 220px
+        height: 25px
+        +laptop 
+            flex-grow: 2
+            margin-right: 20px
+    div.__voice
+        height: 28px
+        width: 28px
+        border: 1px solid white
+        border-radius: 14px
+        background-color: #FFFFFF
+        background-image: url('../assets/icons/micro.png')
+        background-size: cover
+        margin: 0 10px
+        &:hover
+            cursor: pointer
+
+    button 
+        width: 70px
+        height: 31px
+        padding: 0 !important
+        background: #00A383
+        color: white
+        border: 0
+        +Alata
+        &:hover
+            cursor: pointer
+

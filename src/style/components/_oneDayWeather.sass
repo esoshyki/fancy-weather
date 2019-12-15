@@ -1,0 +1,44 @@
+._one_day_weather
+    width: 100%
+    margin-top: 20px
+    +mobile 
+        padding: 0
+
+    ._upper 
+        +label
+        +flex(row)
+        height: 50px
+        width: 100%
+        +mobile
+            width: auto
+
+        p 
+            +appear
+
+        ._icon 
+            background-size: cover
+            width: 100px
+            height: 100px
+            +appear
+
+    ._info 
+        +label
+        +flex(row)
+        background: white
+        margin-top: 10px
+        width: 100%
+        +mobile
+            width: auto
+    
+
+        ._temp-container 
+            +flex(row)
+
+        h2 
+            font-size: 5rem
+            line-height: 0
+            +appear
+        ul 
+            list-style: none
+            +appear
+        

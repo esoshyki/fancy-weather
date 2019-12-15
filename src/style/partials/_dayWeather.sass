@@ -1,0 +1,40 @@
+@import 'displays'
+    
+section._day_weather
+    margin-left: 50px
+    margin-top: 20px
+    +label
+
+    ._one_day_weather 
+        +Source
+        +flex(column)
+
+        ._upper 
+            +flex($jc: space-around)
+            background: #66ccff
+            color: #ffffff
+            font-size: 1rem
+            width: 100%
+
+            ._icon 
+                width: 100px
+                height: 100px
+                background-size: cover
+
+        ._info 
+            +flex
+
+            ._temp 
+                font-size: 5rem
+                line-height: 0px
+                margin: 50px 0
+
+            ul 
+                width: 160px
+                padding: 0
+                list-style-type: none
+                font-size: 0.7rem
+                li
+    ._city 
+        +Source
+        font-size: 2rem                   

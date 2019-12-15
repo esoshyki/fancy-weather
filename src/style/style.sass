@@ -1,0 +1,55 @@
+@import './partials/media'
+@import './partials/fonts'
+@import './partials/displays'
+@import './partials/button'
+@import './partials/control'
+@import './partials/label'
+@import './partials/animation'
+
+
+@import './components/header'
+@import './components/location'
+@import './components/time'
+@import './components/find'
+@import './components/oneDayWeather'
+@import './components/threeDaysWeather'
+@import './components/map'
+@import './components/animate'
+
+@import './partials/dayWeather'
+@import './partials/threDaysWeather'
+    
+body
+    color: black
+    font-size: 20px
+    background: black
+
+    .container
+        max-width: 1440px
+        min-height: 100vh
+        margin: 0 auto
+        padding: 20px 0
+        background-image: url('../assets/default.jpg')
+        background-size: cover
+        +Alata
+
+        main 
+            padding: 0 50px
+            margin-top: 30px
+            +mobile 
+                padding: 10px
+
+            .mid-content 
+                +flex(row, space-around)
+                min-height: 400px
+                +laptop 
+                    +flex(column)
+
+
+                .__left-content
+                    min-width: 400px
+                    +laptop 
+                        width: 100%
+                        +flex(column)
+                        min-width: 0
+

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./dist/style.css">
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <script src="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.js"></script>
+    <link href="https://api.tiles.mapbox.com/mapbox-gl-js/v1.6.0/mapbox-gl.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/ico" href="./favicon.ico"/>
+    <title>Fancy Weather</title>
+</head>
+<body>
+    <div class="container">
+        <header></header>
+        <main></main>
+        <footer></footer>
+    </div>
+    <template id='template'>
+        <div class="__item">
+            <p class='__date'></p>
+            <span class='__temp'></span>
+            <span class='__grad'></span>
+            <div class='__icon'></div>
+        </div>
+    </template>
+    <script src='./dist/bundle.js'></script>
+</body>
+</html>

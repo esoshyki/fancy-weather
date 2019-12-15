@@ -1,0 +1,53 @@
+.__three-days-weather
+    +flex 
+    padding: 0px
+    margin: 30px 20px 20px 50px
+    +laptop 
+        margin: 30px auto
+        +flex(column)
+        height: auto
+        max-width: 600px
+        padding: 0 20px
+        +mobile
+            max-width: 450px
+            width: auto
+
+    .__item 
+        +label
+        +flex(row)
+        font-size: 1rem
+        padding: 5px
+        margin: 5px
+        background: azure
+        +laptop
+            width: 100%
+        +mobile 
+
+        
+
+        ._date 
+            background: #66ccff
+            padding: 5px
+            color: white
+            margin: 0
+
+        ._temp 
+            +flex($jc: space-around)
+            font-size: 2rem
+            line-height: 0
+
+        ._down 
+            width: 100%
+            background: #66ccff
+            +flex
+
+        .__icon
+            width: 100px
+            height: 70px
+            background-color: #FF9640
+            border-radius: 30px
+            background-position-y: -15px
+            background-size: cover
+            margin: 0 10px
+
+

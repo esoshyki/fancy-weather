@@ -1,0 +1,26 @@
+.__container
+    text-align: right
+    +laptop 
+        width: 100%
+        +flex(column)
+        margin-top: 20px
+
+    span 
+        +label
+        display: inline
+        padding: 5px
+        width: 40%
+        font-size: 0.9rem
+        margin-bottom: 20px
+        +laptop 
+            align-self: flex-end
+            margin: 2px 0
+         
+    #map 
+        width: 500px
+        height: 320px
+        border-radius: 10px
+        border: 1px solid white
+        margin-top: 10px
+        +mobile
+            width: 100%

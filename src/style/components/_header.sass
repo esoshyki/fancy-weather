@@ -1,0 +1,69 @@
+header 
+    height: 50px
+    +flex(row, space-between)
+    padding: 0 50px
+    +laptop 
+        +flex(column)
+        height: auto
+        padding: 0 20px
+    +mobile 
+        flex-wrap: wrap
+
+    .control-panel
+        +flex(row)
+        +laptop 
+            width: 100%
+            +flex(row, space-between)
+            margin-bottom: 20px
+        +mobile 
+            flex-wrap: wrap
+
+        button 
+            +button
+            margin: 0 5px
+            background-size: cover
+            &:hover 
+                -webkit-filter: grayscale(0%)
+                filter: grayscale(0%)
+                transition: 1s
+
+        button[data-language='ru'] 
+            background-image: url('../assets/icons/russia.png')
+            -webkit-filter: grayscale(100%)
+            filter: grayscale(100%)
+            transition: 1s
+
+        button[data-language='en'] 
+            background-image: url('../assets/icons/united-kingdom.png')
+            -webkit-filter: grayscale(100%)
+            filter: grayscale(100%)
+            transition: 1s
+        
+        button[data-language='be'] 
+            background-image: url('../assets/icons/belarus.png')
+            -webkit-filter: grayscale(100%)
+            filter: grayscale(100%)
+
+        .selected 
+            +selected
+
+        .__gradus
+           font-size: 1.5rem
+           background-color: #00A383
+           color: white
+
+        .__reload 
+            width: 40px
+            height: 40px
+            padding: 0px !important
+            +button
+            background-image: url('../assets/icons/refresh.png')
+            background-size: cover
+            border: 0
+            &:hover
+                background-size: cover      
+                transform: scale(1.05)     
+
+        .__lang, .__gradus, .__reload 
+            +mobile 
+                margin-top: 20px    
