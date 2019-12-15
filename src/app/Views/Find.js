@@ -67,6 +67,7 @@ export default class FindView {
           recognition.stop();
           clearInterval(this.interval);
           this.voice.style.transform = 'scale(1)';
+          this.app.findCity.call(this.app, this.input.value);
         });
         recognition.start();
       });
